@@ -33,9 +33,9 @@ form {
     background-color: white;
     margin: 0 auto;
     flex-direction: row;
-    border-radius: 10px;
-    height: 760px;
-    width: 1020px;
+    border-radius: 25px;
+    height: 560px;
+    width: 800px;
 }
 
 .container-1{
@@ -48,15 +48,14 @@ form {
 .header-1{
     font-family: "Montserrat";
     letter-spacing: 10px; /*Khoảng cách giữa từng chữ*/
-    font-size: 26px;
-    margin-top: 25px;
+    font-size: 20px;
     opacity: 0.3;
 }
 
 .header-2{
     font-family: "Fraunces";
-    font-size: 70px;
-    margin-top:20px;
+    font-size: 42px;
+    margin-top:10px;
 }
 .price{
     display:flex;
@@ -65,7 +64,7 @@ form {
 .sale-price{
     font-family: "Fraunces";
     color: var(--clr-dark-cyan);
-    font-size: 70px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -73,11 +72,12 @@ form {
     display: block;
     background-color: var(--clr-dark-cyan);
     color: white;
-    padding: 25px 25px;
+    padding: 10px 25px;
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 15px;
+    margin-top:20px;
 }
 
 .submit a:hover{
@@ -87,15 +87,15 @@ form {
 .origin-price{
     text-decoration-line: line-through; /*Gach chữ*/
     opacity: 0.3;
-    margin:30px;
-    font-size: 25px;
+    margin:10px;
+    font-size: 15px;
 }
 
 .content{
     font-family: "Fraunces";
-    font-size: 26px;
+    font-size: 23px;
     opacity: 0.3; /*Làm mờ chữ*/
-    margin-top:20px;
+    margin-top:15px;
 }
 
 .background {
@@ -104,6 +104,7 @@ form {
 
 .background img {
     height: 100%;
+    border-radius: 10px;
 }
 
 .content-1 {
@@ -111,5 +112,36 @@ form {
 }
 
 .attribution{
-    font-size: 40px;
+    font-size: 20px;
+}
+
+@media(max-width:850px){
+    .container{
+        width:630px;
+        height: 410px;
+    }
+
+    .header-1{
+        margin-top:10px;
+        font-size: 13px;
+    }
+
+    .heaader-2{
+        font-size: 42px;
+    }
+
+    .content{
+        font-size: 14px;
+    }
+
+    .content-1{
+        margin:10px;
+    }
+
+    .sale-price{
+        font-size: 35px;
+    }
+
+
+
 }
